@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="lines_Quotes">
+      <p>"Your little effort can give others<br> <h1>Second <br>
+        chance to live life."</h1>
+    </div>
+     
+    <div class="container">
+      <h2>User Record List</h2>
+    <form onsubmit="return validationForm()" name="forms">
+    <!-- label for getting user information-->
+      <div>
+        <label for="">Username</label><br>
+        <input type="text" name="" id="userName" class="form_input" 
+        placeholder="Enter your usename">
+        <p id="usernameerror"></p>
+     </div>
+
+     <br>
+    
+    <!-- label for getting user information-->
+     <div>
+      <!--input element - mandatory field -->
+      <label for="">Email Id</label><br>
+      <input type="email" name="" id="EmailId" class="form_input" 
+      placeholder="myname@example.com">
+      <p id="emailiderror"></p>
+   </div>
+   <br>
+
+   <!-- label for getting user information -->
+   <div class="form_gen">
+    <label for="gender">Gender</label><br>
+    <!--input type as radio button-->
+     <input type="radio" name="gender" value="male" style="color: red ;" /> Male
+    <input type="radio" name="gender" value="female" /> Female
+    <p id="gendererror"></p>
+ </div>
+
+ <br> 
+
+ <!-- label for getting user information-->
+ <div class="select_grp">
+  <label for="bloodgroup" >Select Your Blood Group</label>
+  <br>
+  <select>
+    <option>Blood Group Names</option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+    </option>
+  </select>
+  <p id="bloodgrouperror"></p>
+</div>
+<br>
+ 
+ <!-- label for getting user information-->
+ <div>
+  <label for="address">Enter Your Address</label> <br>
+  <textarea name="" id="address" cols="30" rows="4" class="form_text" 
+  placeholder="Enter your full address"></textarea>
+  <p id="addresserror"></p>
+</div>
+<br>
+<!-- label for getting user information-->
+<div>
+  <label for="phonenumber">Enter Your Phone Number</label><br>
+  <input type="number" id="Number"class="form_input" 
+  placeholder="Enter number">
+  <p id="mobileerror"></p>
+</div>
+<br>
+ 
+      <!-- label for getting user information-->
+ <div>
+  <label for="">Enter Details Regarding Your Medical Health</label><br>
+  <textarea name="text" id="issues" cols="45" rows="4" class="form_text" 
+  placeholder="Enter your issues"></textarea>
+  <p id="issueserror"></p>
+ </div>
+ <br>
+    <!--button is used to reset information -->
+     <input type="submit" value="Submit" id="submitbtbn">
+  </form>
+    </div>
+  </div>
+  <script src="./script.js">
+  </script>
+</body>
+</html>
